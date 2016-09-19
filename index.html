@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="MyFirstApp">
   <head>
     <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <title>My First webpage</title>
+    <script src="myApp.js"></script>
   </head>
   <body>
       <p>
         This is my first page created through Atom editor.
         <img src="images/110.jpg" style="width:40%" alt="" />
       </p>
-      <div class="">
+      <div ng-controller="myFirstController">
         And yes. This works!
+        <input type="text" ng-model="firstname"/>
+        <p>
+          {{firstname}}
+        </p>
+
       </div>
   </body>
 </html>
